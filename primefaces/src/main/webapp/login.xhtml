@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:p="http://primefaces.org/ui"> 
+ <h:head>
+  	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+ </h:head>
+ 	
+ <h:body>
+	<ui:composition template="template.xhtml">
+		<ui:define name="body">	
+		
+		<div class="form-signin">
+			 <h:form>
+				<h2 class="form-signin-heading">Acesse sua conta</h2>
+				<!-- use param.error assuming FormLoginConfigurer#failureUrl contains the query parameter error -->
+				<div class="aui-message aui-message-error" style="margin-bottom: 10px;">
+					<p>O e-mail ou a senha inseridos estão incorretos.</p>
+				</div>
+				<b:inputText placeholder="E-mail"></b:inputText>
+				<b:inputText placeholder="Senha"></b:inputText>
+				<div class="checkbox">
+					<label class="checkbox"> 
+						<input type="checkbox" id="remember-me" name="remember-me" checked="checked" /> Mantenha-me conectado.
+					</label>
+				</div>
+				<p class="pull-right">
+					<a href="/paydomestic/recuperar">Esqueceu sua senha?</a>
+				</p>
+	            <b:commandButton value="Entrar" look="primary"></b:commandButton>
+				<p>
+					Ainda não é registrado? <a href="https://www.paydomestic.com.br/?highlight=1">Registre-se agora</a>
+				</p>
+				<br />
+			</h:form>
+			</div>
+		</ui:define>
+	</ui:composition>
+ </h:body>
+ </html>
