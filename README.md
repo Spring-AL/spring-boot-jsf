@@ -1,2 +1,2 @@
-# spring-boot-jsf
-Integrando jsf com spring boot
+# spring-jsf
+Integrando jsf com spring , exemplo de um crud.
